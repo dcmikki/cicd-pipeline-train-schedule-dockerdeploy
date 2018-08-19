@@ -30,7 +30,6 @@ pipeline {
                     docker.withRegistry('https://registry.hub.docker.com', 'docker_hub_plugin') {
                         app.push("${BUILD_NUMBER})
                         app.push("latest")
-
                     }
                 }
             }
